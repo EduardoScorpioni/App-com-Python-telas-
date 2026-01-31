@@ -1,0 +1,50 @@
+<GerenciadorTelas>:
+    Tela1:
+    Tela2:
+    Tela3:
+
+<Tela1>:
+    name: 'tela1'
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 50
+        Label:
+            text: "Você está na Tela 1"
+            font_size: 28
+        Button:
+            text: "Ir para a Tela 2"
+            font_size: 20
+            on_release: root.ir_tela2()
+
+<Tela2>:
+    name: 'tela2'
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 50
+        Label:
+            text: "Você está na Tela 2"
+            font_size: 28
+        Button:
+            text: "Voltar para a Tela 1"
+            font_size: 20
+            on_release: root.voltar_tela1()
+        Button:
+            text: "Ir para a Tela 3"
+            font_size: 20
+            on_release: root.ir_tela3()
+
+<Tela3>:
+    name: 'tela3'
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 50
+        Label:
+            text: "Você está na Tela 3"
+            font_size: 28
+        Button:
+            text: "Voltar para a Tela 1"
+            font_size: 20
+            on_release: root.voltar_tela1()
